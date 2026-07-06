@@ -38,7 +38,7 @@ function inferTag(text: string): Tag {
   return "news";
 }
 
-async function fetchNews(itemsPerFeed = 20): Promise<NewsItem[]> {
+async function fetchNews(itemsPerFeed = 100): Promise<NewsItem[]> {
   const results = await Promise.allSettled(
     FEEDS.map(async ({ url, source }) => {
       const feed = await parser.parseURL(url);
@@ -68,7 +68,7 @@ export default async function Home() {
   const items = await fetchNews();
 
   return (
-    <div className="min-h-screen bg-zinc-50 dark:bg-black font-sans">
+    <div className="min-h-screen bg-zinc-50 font-sans">
       <NewsFeed items={items} />
     </div>
   );
