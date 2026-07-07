@@ -101,9 +101,9 @@ against today to bucket it into today / week / month.
 running regexes over the title + summary. First match wins, in priority order:
 
 ```
-funding      -  rais / funding / series X / seed / invest / ipo / round / valuation ...
-launch       -  launch / unveil / debut / introduc / rolls out ...
-acquisition  -  acquire / acquisition / buyout / merger / takes over / buys ...
+funding      -  rais / funding / series X / seed / invest / ipo / round / valuation 
+launch       -  launch / unveil / debut / introduc / rolls out 
+acquisition  -  acquire / acquisition / buyout / merger / takes over / buys 
 news         -  (default when nothing else matches)
 ```
 
