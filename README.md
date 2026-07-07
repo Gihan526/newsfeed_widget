@@ -72,14 +72,14 @@ type NewsItem = {
 sources in order and take the first that exists:
 
 ```
-enclosure.url  →  media:thumbnail.url  →  first <img> in the HTML body
+enclosure.url  ->  media:thumbnail.url  ->  first <img> in the HTML body
 ```
 
 **How each item's date is decided** - the feed doesn't always expose a clean date, so I pick one
 with a three-step fallback (first that exists wins):
 
 ```
-item.isoDate  →  item.pubDate  →  new Date().toISOString()
+item.isoDate  ->  item.pubDate  ->  new Date().toISOString()
 ```
 
 - `isoDate` - `rss-parser`'s normalized ISO-8601 date (e.g. `2026-07-07T09:30:00Z`). Preferred
