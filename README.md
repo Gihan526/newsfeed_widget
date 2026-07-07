@@ -139,7 +139,7 @@ so every click is instant. It renders a responsive 1/2/3-column card grid, and s
 
 ---
 
-## Important: Why the feed only returns ~20 items (and how the count really works)
+## Why the feed only returns ~20 items (how count really works)
 
 **I fetch from Inc42's site-wide RSS feed, not the homepage.**
 `https://inc42.com/feed` is a machine-readable XML endpoint  that lists
