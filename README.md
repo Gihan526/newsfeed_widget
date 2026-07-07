@@ -114,7 +114,7 @@ source is fetched independently.
 
 **Caching (ISR)** - `export const revalidate = 3600` tells Next.js to render the page once, cache
 the HTML, and only re-fetch the feed at most once per hour. Visitors get an instant static page;
-Inc42 doesn't get hammered on every request.
+Inc42 doesn't get fetched on every request.
 
 ### 2. `app/NewsFeed.tsx` - the client (UI)
 
