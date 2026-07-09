@@ -1,9 +1,3 @@
-// The toolbar at the top of the feed. It lets the user filter by tag,
-// filter by date range, and choose the sort order.
-//
-// This component does not hold any state itself. It receives the current
-// values and "setter" functions and just draws the buttons.
-
 import FilterButton from "@/components/ui/FilterButton";
 import {
   RANGE_OPTIONS,

@@ -7,7 +7,6 @@ import { TAG_STYLES, type NewsItem } from "@/lib/types";
 export default function NewsCard({ item }: { item: NewsItem }) {
   return (
     <article className="flex flex-col bg-white rounded-2xl border border-zinc-200 overflow-hidden shadow-sm hover:shadow-md transition-shadow">
-      {/* Some feed items don't have an image, so only show it when we have one. */}
       {item.image && (
         <div className="relative w-full h-40 bg-zinc-100">
           <Image

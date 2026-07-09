@@ -1,8 +1,5 @@
 "use client";
 
-// The main component. It reads the filter state from the useNewsFilters
-// hook, then renders the toolbar and the grid of cards.
-
 import FilterBar from "@/components/FilterBar";
 import NewsCard from "@/components/NewsCard";
 import { useNewsFilters } from "@/hooks/useNewsFilters";
